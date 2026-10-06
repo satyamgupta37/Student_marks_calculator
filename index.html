@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="heading">
+            <h1>🎓 Student Marks Calculator</h1>
+            <p>Enter student details and marks</p>
+        </div>
+
+        <div class="student-name">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter student name">
+        </div>
+
+        <div class="student-name">
+            <label for="rollNo">Roll Number</label>
+            <input type="text" id="rollNo" placeholder="Enter roll number">
+        </div>
+
+        <div class="subjects">
+
+            <div class="subject">
+                <label for="subject1">📘 Mathematics</label>
+                <input type="number" id="subject1" placeholder="Marks out of 100" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label for="subject2">📗 Science</label>
+                <input type="number" id="subject2" placeholder="Marks out of 100" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label for="subject3">📕 English</label>
+                <input type="number" id="subject3" placeholder="Marks out of 100" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label for="subject4">📙 Hindi</label>
+                <input type="number" id="subject4" placeholder="Marks out of 100" min="0" max="100">
+            </div>
+
+            <div class="subject">
+                <label for="subject5">📒 Computer</label>
+                <input type="number" id="subject5" placeholder="Marks out of 100" min="0" max="100">
+            </div>
+
+        </div>
+
+        <button class="calculate-btn" onclick="calculateResult()">
+            Calculate Result ✨
+        </button>
+
+        <div class="result" id="result">
+
+            <h2>📊 Student Result</h2>
+
+            <div class="student-result">
+                <p id="displayName"></p>
+                <span id="displayRoll"></span>
+            </div>
+
+            <div class="result-grid">
+
+                <div class="result-box">
+                    <h3>Total Marks</h3>
+                    <p id="total">0</p>
+                </div>
+
+                <div class="result-box">
+                    <h3>Percentage</h3>
+                    <p id="percentage">0%</p>
+                </div>
+
+                <div class="result-box">
+                    <h3>Average</h3>
+                    <p id="average">0</p>
+                </div>
+
+                <div class="result-box">
+                    <h3>Grade</h3>
+                    <p id="grade">-</p>
+                </div>
+
+                <div class="result-box">
+                    <h3>Result</h3>
+                    <p id="status">-</p>
+                </div>
+
+            </div>
+
+            <button class="reset-btn" onclick="resetCalculator()">
+                Reset ↻
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
